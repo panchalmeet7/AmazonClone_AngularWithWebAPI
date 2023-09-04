@@ -1,0 +1,11 @@
+<div class="my-container mx-auto border border-dark">
+  <div
+    class="mb-4 my-shadow my-rounded-corner overflow-hidden"
+    *ngFor="let SuggestedProduct of suggestedProducts"
+  >
+    <div class="product-banner">
+      <img src="/assets/Images/{{ SuggestedProduct.bannerimage }}" alt="" />
+    </div>
+    <div class="product-list">List</div>
+  </div>
+</div>
