@@ -6,7 +6,6 @@
     >
       <img src="/assets/Images/mobiles/10/1.jpg" alt="" class="card-img-top" />
     </div>
-    <!-- TODO: data from bakend -->
     <div class="card-body">
       <h5 class="card-title title">Title</h5>
       <h6 class="card-subtitle my-2 text-primary">10 Products are available</h6>
@@ -28,10 +27,9 @@
   </div>
 </div>
 
-<!-- listview  -->
 <div class="list-view" *ngIf="view === 'list'">
   <div class="card">
-    <div class="row g-0">
+    <div class="row">
       <div
         class="col-md-4 overflow-hidden d-flex justify-content-center align-items-center"
       >
@@ -41,19 +39,21 @@
           alt=""
         />
       </div>
-      <div class="col d-flex flex-column">
-        <div class="card-header text-center text-success">Header</div>
+      <div class="col">
+        <div class="card-header text-center">Header</div>
         <div class="card-body">
           <h5 class="card-title title">Title</h5>
           <p class="card-text description">Description</p>
-          <h6 class="card-subtitle text-primary">10 Products are available</h6>
+          <h6 class="card-subtitle mb-3 text-primary">
+            10 Products are available
+          </h6>
         </div>
         <div class="card-body">
-          <h6 class="card-title text-muted">Pricing</h6>
-          <h5 class="card-title text-success">
+          <h4 class="card-title text-muted">Pricing</h4>
+          <h2 class="card-title text-success">
             Final Price
             <span class="text-primary">-20%</span>
-          </h5>
+          </h2>
           <h5 class="card-subtitle text-danger text-decoration-line-through">
             Original Price
           </h5>
